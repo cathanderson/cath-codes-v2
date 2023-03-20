@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         syne: ["Syne", "sans-serif"],
+        ernie: ["adobe-handwriting-ernie", "sans-serif"]
       },
       colors: {
         "orchid": {

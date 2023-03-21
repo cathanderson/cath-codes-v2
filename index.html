@@ -18,9 +18,9 @@
 </head>
 <body class="font-inter ">
     <!-- intro section -->
-    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-orchid-200">
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-orchid-200 z-0">
         <!-- nav bar -->
-        <nav class="w-full fixed top-0 bg-orchid-100">
+        <nav class="w-full fixed top-0 bg-orchid-100 z-30">
             <div class="container mx-auto py-5 flex items-center justify-between">
                 <ul class="hidden md:flex space-x-10 text-orchid-700 font-bold text-sm">
                     <li class="hover:text-orchid-500">
@@ -79,6 +79,26 @@
             </div>
         </div>
     </div>
+        <!-- about section -->
+    <div class="container mx-auto relative">
+        <div class="container py-40 flex justify-center items-center absolute gap-20">
+            <img src="./assets/cath.png" alt="cath" class="top-0 left-0 w-1/4 rounded-full shadow-xl">
+            <div class="w-1/2">
+                
+                <h4>My name is Cath Anderson
+                and I'm a Software Engineer
+                based in New York City/Hoboken, NJ.</h4>
+                <div>I recently graduated from App Academy's coding bootcamp in NYC following a previous career in technical recruiting with
+                the eCommerce company Shopify and the safety startup Citizen. A few of my skills include (but aren't limited to!):
+                React/Redux, Javascript, HTML, CSS, Ruby on Rails, AWS, Google Maps API, and PostgreSQL.
+                <br><br>
+                When I'm not coding, you can usually find me cooking, on the Peloton leaderboard, or watching <span class="italic">Real Housewives</span>. Reach out
+                to chat me up about any of these things or about my web development projects/job opportunities/networking on LinkedIn or
+                via cathanders10@gmail.com!</div>
+            </div>
+        </div>
+    </div>
+    
     <script src="./app.js"></script>
 </body>
 </html>

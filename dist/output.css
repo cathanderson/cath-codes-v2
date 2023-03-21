@@ -555,10 +555,6 @@ video {
   position: absolute;
 }
 
-.relative {
-  position: relative;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -567,20 +563,8 @@ video {
   top: 0px;
 }
 
-.top-20 {
-  top: 5rem;
-}
-
-.top-28 {
-  top: 7rem;
-}
-
 .top-40 {
   top: 10rem;
-}
-
-.z-20 {
-  z-index: 20;
 }
 
 .z-10 {
@@ -703,52 +687,17 @@ video {
   text-align: center;
 }
 
-.font-inter {
-  font-family: Inter, sans-serif;
-}
-
 .font-ernie {
   font-family: adobe-handwriting-ernie, sans-serif;
+}
+
+.font-inter {
+  font-family: Inter, sans-serif;
 }
 
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -760,36 +709,203 @@ video {
   color: rgb(154 54 75 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-orchid-800 {
-  --tw-text-opacity: 1;
-  color: rgb(129 48 66 / var(--tw-text-opacity));
-}
-
 .text-orchid-900 {
   --tw-text-opacity: 1;
   color: rgb(111 44 61 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* Foil C Animations */
+
+#foil-c {
+  animation: rotationC 4.2s infinite linear;
+}
+
+#c-float-wrapper {
+  animation: floatingC 2.8s infinite ease-in-out;
+}
+
+@keyframes rotationC {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(6deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes floatingC {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* Foil A Animations */
+
+#foil-a {
+  animation: rotationA 4s infinite linear;
+}
+
+#a-float-wrapper {
+  animation: floatingA 3s infinite ease-in-out;
+}
+
+@keyframes rotationA {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-3deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes floatingA {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 14px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* Foil T Animations */
+
+#foil-t {
+  animation: rotationT 3.8s infinite linear;
+}
+
+#t-float-wrapper {
+  animation: floatingT 3.2s infinite ease-in-out;
+}
+
+@keyframes rotationT {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes floatingT {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 11px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* Foil H Animations */
+
+#foil-h {
+  animation: rotationH 3.9s infinite linear;
+}
+
+#h-float-wrapper {
+  animation: floatingH 3.1s infinite ease-in-out;
+}
+
+@keyframes rotationH {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-3deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(4deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes floatingH {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
 .hover\:text-orchid-500:hover {
   --tw-text-opacity: 1;
   color: rgb(206 101 114 / var(--tw-text-opacity));
-}
-
-@media (min-width: 640px) {
-  .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .sm\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
 }
 
 @media (min-width: 768px) {
@@ -805,18 +921,8 @@ video {
     display: none;
   }
 
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .md\:text-5xl {
     font-size: 3rem;
-    line-height: 1;
-  }
-
-  .md\:text-6xl {
-    font-size: 3.75rem;
     line-height: 1;
   }
 }
@@ -826,30 +932,8 @@ video {
     height: 100vh;
   }
 
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .lg\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
   .lg\:text-6xl {
     font-size: 3.75rem;
-    line-height: 1;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .xl\:text-7xl {
-    font-size: 4.5rem;
     line-height: 1;
   }
 }

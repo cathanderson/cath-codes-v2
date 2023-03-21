@@ -1,3 +1,186 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Foil C Animations */
+
+#foil-c {
+    animation: rotationC 4.2s infinite linear;
+}
+#c-float-wrapper {
+    animation: floatingC 2.8s infinite ease-in-out;
+}
+
+@keyframes rotationC {
+    0% {
+            transform: rotate(0deg);
+        }
+    
+        25% {
+            transform: rotate(6deg);
+        }
+    
+        50% {
+            transform: rotate(0deg);
+        }
+    
+        75% {
+            transform: rotate(-2deg);
+        }
+    
+        100% {
+            transform: rotate(0deg);
+        }
+}
+
+@keyframes floatingC {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+/* Foil A Animations */
+
+#foil-a {
+    animation: rotationA 4s infinite linear;
+}
+
+#a-float-wrapper {
+    animation: floatingA 3s infinite ease-in-out;
+}
+
+@keyframes rotationA {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-3deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes floatingA {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 14px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+/* Foil T Animations */
+
+#foil-t {
+    animation: rotationT 3.8s infinite linear;
+}
+
+#t-float-wrapper {
+    animation: floatingT 3.2s infinite ease-in-out;
+}
+
+@keyframes rotationT {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(2deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-3deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes floatingT {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 11px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+/* Foil H Animations */
+
+#foil-h {
+    animation: rotationH 3.9s infinite linear;
+}
+
+#h-float-wrapper {
+    animation: floatingH 3.1s infinite ease-in-out;
+}
+
+@keyframes rotationH {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-3deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes floatingH {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}

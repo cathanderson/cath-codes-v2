@@ -6,10 +6,10 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         syne: ["Syne", "sans-serif"],
-        ernie: ["adobe-handwriting-ernie", "sans-serif"]
+        ernie: ["adobe-handwriting-ernie", "sans-serif"],
       },
       colors: {
-        "orchid": {
+        orchid: {
           50: "#fcf4f5",
           100: "#f9eaea",
           200: "#f4d7da",
@@ -21,6 +21,13 @@ module.exports = {
           800: "#813042",
           900: "#6f2c3d",
         },
+      },
+      borderRadius: {
+        "4xl": "90px",
+      },
+      width: {
+        xlpic: "28%",
+        pic: "45%",
       },
     },
   },

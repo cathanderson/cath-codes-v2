@@ -26,8 +26,14 @@ module.exports = {
         "4xl": "90px",
       },
       width: {
-        xlpic: "28%",
-        pic: "45%",
+        mdpic: "40%",
+        xlpic: "30%",
+      },
+      screens: {
+      'xs': '380px',
+      },
+      backgroundImage: {
+        'paint': "url('../assets/paint.jpeg')",
       },
     },
   },

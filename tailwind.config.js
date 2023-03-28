@@ -30,10 +30,14 @@ module.exports = {
         xlpic: "30%",
       },
       screens: {
-      'xs': '380px',
+        xs: "380px",
       },
       backgroundImage: {
-        'paint': "url('../assets/paint.jpeg')",
+        paint: "url('../assets/paint.jpeg')",
+      },
+      minHeight: {
+        "1/2": "50%",
+        "2/3": "66.666666666%",
       },
     },
   },

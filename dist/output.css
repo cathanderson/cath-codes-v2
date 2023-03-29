@@ -616,10 +616,6 @@ video {
   width: 25%;
 }
 
-.w-120 {
-  width: 120px;
-}
-
 .w-2\/3 {
   width: 66.666667%;
 }
@@ -632,12 +628,12 @@ video {
   width: 2rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-96 {
   width: 24rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .cursor-pointer {
@@ -668,20 +664,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
-}
-
-.gap-16 {
-  gap: 4rem;
-}
-
 .gap-12 {
   gap: 3rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -761,36 +749,16 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .pt-10 {
   padding-top: 2.5rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
-.pb-14 {
-  padding-bottom: 3.5rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
 }
 
 .text-center {
@@ -1056,6 +1024,14 @@ video {
   100% {
     transform: translate(0, -0px);
   }
+}
+
+.hover\:invisible:hover {
+  visibility: hidden;
+}
+
+.hover\:hidden:hover {
+  display: none;
 }
 
 .hover\:text-orchid-500:hover {

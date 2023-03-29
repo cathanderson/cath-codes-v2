@@ -28,6 +28,7 @@ module.exports = {
       width: {
         mdpic: "40%",
         xlpic: "30%",
+        120: "120px",
       },
       screens: {
         xs: "380px",

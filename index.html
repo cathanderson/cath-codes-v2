@@ -16,9 +16,9 @@
     
     <title>Cath's Portfolio</title>
 </head>
-<body class="font-inter  bg-orchid-100">
+<body class="font-inter  bg-orchid-100 flex flex-col">
     <!-- intro section -->
-    <div class="min-h-1/2 sm:h-2/3 lg:h-screen bg-gradient-to-t from-orchid-200  to-white z-0">
+    <div class="min-h-1/2 sm:h-2/3 lg:h-screen bg-gradient-to-t from-orchid-200  to-white z-0 ">
         <!-- nav bar -->
         <nav class="w-full fixed top-0 bg-orchid-100 z-30">
             <div class="container mx-auto py-5 flex items-center justify-between">
@@ -41,7 +41,7 @@
                 </ul>
                 <img src="./assets/moon-face.png" alt="dark mode" class="w-7 cursor-pointer hidden md:block">
                 <img id="hamburger" src="./assets/menu.png" alt="menu" class="md:hidden cursor-pointer w-8 z-30 mx-6">
-                <ul id="dropdown" class="hidden absolute left-0 top-0 w-full bg-orchid-400 p-10 rounded-b-3xl space-y-10 text-white text-center">
+                <ul id="dropdown" class="hidden absolute left-0 top-0 w-full bg-orchid-400 p-10 rounded-b-3xl space-y-10 text-white text-center shadow-2xl">
                     <li>
                         <a href="#">Home</a>
                     </li>
@@ -80,25 +80,38 @@
         </div>
     </div>
         <!-- about section -->
-    <div class="container mx-auto  h-auto relative flex justify-center">
-        <div class="flex-col xl:flex-row py-10 sm:py-20 flex justify-center items-center absolute xs:gap-6 md:gap-10 xl:gap-20 xs:my-12 md:my-24 h-fit bg-orchid-400 text-white rounded-4xl xs:w-11/12 sm:w-4/5">
-            <img src="./assets/cath.png" alt="cath" class="top-0 left-0 w-pic rounded-full shadow-xl xs:w-2/3 sm:w-1/2 md:w-mdpic lg:w-lgpic xl:w-xlpic">
+    <div class="container mx-auto h-auto flex justify-center">
+        <div
+            class="flex-col xl:flex-row py-10 sm:py-20 flex justify-center items-center xs:gap-6 md:gap-10 xl:gap-20 xs:my-12 md:my-24 h-fit bg-orchid-400 text-white rounded-4xl xs:w-11/12 sm:w-4/5 shadow-2xl">
+            <img src="./assets/cath.png" alt="cath"
+                class="top-0 left-0 w-pic rounded-full shadow-xl xs:w-2/3 sm:w-1/2 md:w-mdpic lg:w-lgpic xl:w-xlpic">
             <div class="w-2/3 xl:w-1/2">
-                
-                <h4 class="xs:text-xl lg:text-3xl font-semibold" >My name is Catherine Anderson
-                and I'm a Software Engineer
-                based in New York City/Hoboken, NJ.</h4>
+    
+                <h4 class="xs:text-xl lg:text-3xl font-semibold">My name is Catherine Anderson
+                    and I'm a Software Engineer
+                    based in New York City/Hoboken, NJ.</h4>
                 <br>
-                <div class="xs:text-xs md:text-base lg:text-lg font-medium">I recently graduated from App Academy's coding bootcamp in NYC following a previous career in technical recruiting with
-                the eCommerce company Shopify and the safety startup Citizen. A few of my skills include (but aren't limited to!):
-                React/Redux, Javascript, HTML, CSS, Ruby on Rails, AWS, Google Maps API, and PostgreSQL.
-                <br><br>
-                When I'm not coding, you can usually find me cooking, on the Peloton leaderboard, or watching <span class="italic">Real Housewives</span>. Reach out
-                to chat me up about any of these things or about my web development projects/job opportunities/networking on LinkedIn or
-                via cathanders10@gmail.com!</div>
+                <div class="xs:text-xs md:text-base lg:text-lg font-medium">I recently graduated from App Academy's coding
+                    bootcamp in NYC following a previous career in technical recruiting with
+                    the eCommerce company Shopify and the safety startup Citizen. A few of my skills include (but aren't
+                    limited to!):
+                    React/Redux, Javascript, HTML, CSS, Ruby on Rails, AWS, Google Maps API, and PostgreSQL.
+                    <br><br>
+                    When I'm not coding, you can usually find me cooking, on the Peloton leaderboard, or watching <span
+                        class="italic">Real Housewives</span>. Reach out
+                    to chat me up about any of these things or about my web development projects/job
+                    opportunities/networking on LinkedIn or
+                    via cathanders10@gmail.com!
+                </div>
             </div>
         </div>
     </div>
+    <div class="container mx-auto flex justify-center items-center">
+        
+            <h4 class="text-3xl ">Projects</h4>
+    
+    </div>
+    
     
     <script src="./app.js"></script>
 </body>

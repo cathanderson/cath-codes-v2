@@ -16,46 +16,48 @@
     
     <title>Cath's Portfolio</title>
 </head>
-<body class="font-inter  bg-orchid-100 flex flex-col">
+<body class="font-inter  flex flex-col justify-center items-center dark bg-orchid-500">
+    
     <!-- intro section -->
-    <div class="min-h-1/2 sm:h-2/3 lg:h-screen bg-gradient-to-t from-orchid-200  to-white z-0 ">
+    <div class="min-h-1/2 sm:h-2/3 lg:h-screen bg-gradient-to-t from-orchid-200  to-white dark:from-orchid-600  dark:to-orchid-300 z-0 ">
         <!-- nav bar -->
-        <nav class="w-full fixed top-0 bg-orchid-100 z-30">
+        <nav class="w-full fixed top-0 bg-orchid-100 dark:bg-orchid-900 z-30">
             <div class="container mx-auto py-5 flex items-center justify-between">
-                <ul class="hidden md:flex space-x-10 text-orchid-700 font-bold text-sm">
+                <ul class="hidden md:flex space-x-10 text-orchid-700 dark:text-orchid-300 font-bold text-sm">
                     <li class="hover:text-orchid-500">
                         <a href="#">Home</a>
                     </li>
                     <li class="hover:text-orchid-500">
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li class="hover:text-orchid-500">
-                        <a href="#">Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li class="hover:text-orchid-500">
-                        <a href="#">Resume</a>
+                        <a href="#resume">Resume</a>
                     </li>
                     <li class="hover:text-orchid-500">
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
-                <img src="./assets/moon-face.png" alt="dark mode" class="w-7 cursor-pointer hidden md:block">
+                <img src="./assets/moon-face.png" alt="dark mode" class="w-7 cursor-pointer hidden md:block dark:hidden">
+                <img src="./assets/sun-face.png" alt="light mode" class="w-7 cursor-pointer hidden dark:md:block">
                 <img id="hamburger" src="./assets/menu.png" alt="menu" class="md:hidden cursor-pointer w-8 z-30 mx-6">
                 <ul id="dropdown" class="hidden absolute left-0 top-0 w-full bg-orchid-400 p-10 rounded-b-3xl space-y-10 text-white text-center shadow-2xl">
                     <li>
-                        <a href="#">Home</a>
+                        <a id="anchor-link" href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a id="anchor-link" href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#">Projects</a>
+                        <a id="anchor-link" href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#">Resume</a>
+                        <a id="anchor-link" href="#resume">Resume</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a id="anchor-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -80,10 +82,10 @@
         </div>
     </div>
         <!-- about section -->
-    <div class="container mx-auto h-auto flex flex-col items-center justify-center">
-        <h4 class="text-3xl font-bold text-orchid-800 pt-20 place-self-start pl-14">About</h4>
+    <div id="about" class="container h-auto w-max flex flex-col items-center justify-center">
+        <h4 class="text-3xl font-bold text-orchid-800 pt-20 place-self-start pl-8 md:pl-14 dark:text-orchid-100">About</h4>
         <div
-            class="flex-col xl:flex-row py-10 sm:py-20 flex justify-center items-center xs:gap-6 md:gap-10 xl:gap-20 xs:my-12 md:my-16 h-fit bg-white text-orchid-700 rounded-4xl xs:w-11/12 sm:w-4/5 shadow-2xl">
+            class="flex-col xl:flex-row py-10 sm:py-20 flex justify-center items-center xs:gap-6 md:gap-10 xl:gap-20 xs:my-12 md:my-16 h-fit bg-white text-orchid-700  dark:text-orchid-800 dark:bg-orchid-400 rounded-4xl xs:w-11/12 sm:w-4/5 shadow-2xl">
             <img src="./assets/cath.png" alt="cath"
                 class="top-0 left-0 w-pic rounded-full shadow-xl xs:w-2/3 sm:w-1/2 md:w-mdpic lg:w-lgpic xl:w-xlpic">
             <div class="w-2/3 xl:w-1/2">
@@ -108,9 +110,9 @@
         </div>
     </div>
     <!-- projects section -->
-    <div class="container mx-auto flex justify-center items-center flex-col">
+    <div id="projects" class="container mx-auto flex justify-center items-center flex-col">
         
-            <h4 class="text-3xl font-bold text-orchid-800 pb-12 place-self-start pl-14">Projects</h4>
+            <h4 class="text-3xl font-bold text-orchid-800 pb-12 place-self-start pl-8 md:pl-14">Projects</h4>
             <div class="flex justify-center items-center content-evenly flex-wrap gap-12">
                 <div class="group w-96 h-tile bg-white px-10 pt-10 pb-6 flex justify-center items-center flex-col gap-6 rounded-3xl cursor-pointer shadow-lg hover:gap-2 hover:bg-orchid-200">
                     <img src="./assets/rhobnb.png" alt="RHOBNB" class="shadow-lg group-hover:hidden">
@@ -154,8 +156,8 @@
                 
             </div>
             <!-- resume section -->
-            <div class="container flex justify-center items-center flex-col ">
-                <h4 class="text-3xl font-bold text-orchid-800 pt-20 place-self-start pl-14">Resume</h4>
+            <div id="resume" class="container flex justify-center items-center flex-col">
+                <h4 class="text-3xl font-bold text-orchid-800 pt-20 place-self-start pl-8 md:pl-14">Resume</h4>
                 <!-- <iframe src="./assets/resume.pdf" class="xs:h-500 xs:w-11/12 sm:h-730 sm:w-5/6 md:h-900 lg:h-1050 lg:w-3/4 xl:h-1150 xl:w-2/3"></iframe> -->
                 <!-- <iframe
                     src="https://docs.google.com/document/d/e/2PACX-1vQDeYncrVizFuWDFfgkJMIQKMG_gmEjDEeJljXrdooKShG6GWfJhXHueju2QN4rGUuDAMPx-HXBxDEj/pub?embedded=true" class="w-2/3 h-1150"></iframe> -->
@@ -238,8 +240,8 @@
                 </div>
             </div>
             <!-- contact section -->
-            <div class="container flex justify-center items-center flex-col ">
-                <h4 class="text-3xl font-bold text-orchid-800 pt-16 place-self-start pl-14">Contact</h4>
+            <div id="contact" class="container flex justify-center items-center flex-col ">
+                <h4 class="text-3xl font-bold text-orchid-800 pt-16 place-self-start pl-8 md:pl-14">Contact</h4>
                 <div
                     class="flex-col xl:flex-row py-10 xs:p-10 md:p-16 flex justify-center items-center xs:gap-6 md:gap-10 xl:gap-20 xs:my-12 md:my-16 h-fit bg-white text-orchid-700 rounded-3xl xs:w-11/12 sm:w-9/12 lg:w-7/12 xl:w-5/12 shadow-2xl ">
                     <div class="flex justify-center items-center flex-col">
@@ -253,9 +255,9 @@
                     </div>
                 </div>
             </div>
+            </div>
             <!-- footer -->
             
-        </div>
         <nav class="w-full bg-orchid-300 z-30">
             <div class="container mx-auto py-3 flex items-center justify-end md:justify-between text-orchid-700 font-semibold text-xs">
                 <div class="hidden italic  font-normal md:flex">Designed by Catherine Anderson in Hoboken, NJ</div>

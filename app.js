@@ -17,15 +17,12 @@ anchorLinks.forEach((link)=> {
 })
 
 moon.addEventListener("click", ()=> {
-    // body.classList.add("dark");
     body.classList.toggle("dark");
     body.classList.toggle("bg-orchid-300");
     body.classList.toggle("bg-orchid-600");
 })
 
 sun.addEventListener("click", () => {
-//   body.classList.remove("dark");
-//   body.classList.add("dark");
   body.classList.toggle("dark");
   body.classList.toggle("bg-orchid-300");
   body.classList.toggle("bg-orchid-600");
